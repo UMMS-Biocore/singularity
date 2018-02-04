@@ -23,7 +23,7 @@ From: ubuntu:16.04
 
     apt-get -y autoremove
 
-    export JAVA_HOME /usr/lib/jvm/java-8-oracle
+    export JAVA_HOME=/usr/lib/jvm/java-8-oracle
     mkdir /data && cd /data
     curl -s https://get.nextflow.io | bash 
     mv /data/nextflow /usr/bin/.
@@ -38,6 +38,5 @@ From: ubuntu:16.04
     cd /usr/local/bin/dolphin-bin/RSeQC-2.6.2 && python setup.py install
     make -C /usr/local/bin/dolphin-bin/RSEM-1.2.29
 
-    PATH=$PATH:/usr/local/bin/dolphin-bin
-    export PATH
+    export PATH=$PATH:/usr/local/bin/dolphin-bin
 
