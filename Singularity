@@ -7,7 +7,6 @@ From: ubuntu:16.04
     Version v1.0
 
 %post
-
     apt-get update
     apt-get -y upgrade
     apt-get dist-upgrade
