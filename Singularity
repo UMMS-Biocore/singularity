@@ -23,8 +23,8 @@ From: ubuntu:16.04
 
     apt-get -y autoremove
 
-    WORKDIR /data
     export JAVA_HOME /usr/lib/jvm/java-8-oracle
+    mkdir /data && cd /data
     curl -s https://get.nextflow.io | bash 
     mv /data/nextflow /usr/bin/.
 
