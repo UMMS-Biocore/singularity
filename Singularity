@@ -21,16 +21,16 @@ From: ubuntu:16.04
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /var/cache/oracle-jdk8-installer
 
-    RUN apt-get -y autoremove
+    apt-get -y autoremove
 
     WORKDIR /data
-    ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+    export JAVA_HOME /usr/lib/jvm/java-8-oracle
     curl -s https://get.nextflow.io | bash 
     mv /data/nextflow /usr/bin/.
 
     mkdir /project /nl /share /.nextflow
 
-    ENV GITUSER=UMMS-Biocore
+    export GITUSER=UMMS-Biocore
 
     git clone https://github.com/${GITUSER}/dolphin-bin /usr/local/bin/dolphin-bin
 
