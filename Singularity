@@ -12,7 +12,7 @@ From: ubuntu:16.04
     apt-get dist-upgrade
     apt-get -y install libsqlite3-dev libbz2-dev libssl-dev python python-dev \
     python-pip git libxml2-dev software-properties-common wget tree vim \
-    subversion g++ gcc gfortran libcurl4-openssl-dev
+    subversion g++ gcc gfortran libcurl4-openssl-dev curl
 
     echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
     add-apt-repository -y ppa:webupd8team/java && \
