@@ -36,9 +36,9 @@ From: ubuntu:16.04
 
     pip install -U boto
     pip install numpy
+    pip install RSeQC
 
     cd /usr/local/bin/dolphin-bin/MACS2 && python setup.py install
-    cd /usr/local/bin/dolphin-bin/RSeQC-2.6.2 && python setup.py install
     make -C /usr/local/bin/dolphin-bin/RSEM-1.2.29
 
     export PATH=$PATH:/usr/local/bin/dolphin-bin
