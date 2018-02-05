@@ -6,6 +6,10 @@ From: ubuntu:16.04
     AUTHOR Alper Kucukural <alper.kucukural@umassmed.edu>
     Version v1.0
 
+%environment
+    PATH=$PATH:/bin:/sbin:/usr/local/bin/dolphin-bin
+    export PATH
+
 %post
     apt-get update
     apt-get -y upgrade
@@ -41,5 +45,4 @@ From: ubuntu:16.04
     cd /usr/local/bin/dolphin-bin/MACS2 && python setup.py install
     make -C /usr/local/bin/dolphin-bin/RSEM-1.2.29
 
-    echo "export PATH=$PATH:/bin:/sbin:/usr/local/bin/dolphin-bin" >> "/environment"
 
