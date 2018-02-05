@@ -41,5 +41,5 @@ From: ubuntu:16.04
     cd /usr/local/bin/dolphin-bin/MACS2 && python setup.py install
     make -C /usr/local/bin/dolphin-bin/RSEM-1.2.29
 
-    echo "    PATH=$PATH:/bin:/sbin:/usr/local/bin/dolphin-bin" >> "$SINGULARITY_BUILD_ROOT/environment"
+    echo "export PATH=$PATH:/bin:/sbin:/usr/local/bin/dolphin-bin" >> "/environment"
 
