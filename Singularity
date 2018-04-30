@@ -15,7 +15,7 @@ From: ubuntu:16.04
     apt-get -y upgrade
     apt-get dist-upgrade
     apt-get -y install libsqlite3-dev libbz2-dev libssl-dev python python-dev \
-    python-pip git libxml2-dev software-properties-common wget tree vim \
+    python-setuptools git libxml2-dev software-properties-common wget tree vim \
     subversion g++ gcc gfortran libcurl4-openssl-dev curl
 
     echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
@@ -37,8 +37,10 @@ From: ubuntu:16.04
     export GITUSER=UMMS-Biocore
 
     git clone https://github.com/${GITUSER}/dolphin-bin /usr/local/bin/dolphin-bin
-
+    
+    easy_install pip
     pip install --upgrade pip
+    pip install -U boto
     pip install numpy
     pip install RSeQC
 
