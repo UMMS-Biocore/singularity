@@ -39,7 +39,6 @@ From: ubuntu:16.04
     git clone https://github.com/${GITUSER}/dolphin-bin /usr/local/bin/dolphin-bin
 
     pip install --upgrade pip
-    pip install -U boto
     pip install numpy
     pip install RSeQC
 
