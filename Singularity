@@ -44,6 +44,5 @@ From: ubuntu:16.04
     pip install numpy
 
     cd /usr/local/bin/dolphin-bin/MACS2 && python setup.py install
-    make -C /usr/local/bin/dolphin-bin/RSEM-1.2.29
 
 
